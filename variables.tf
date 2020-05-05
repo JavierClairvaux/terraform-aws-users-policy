@@ -10,7 +10,7 @@ variable "profile"{
 
 variable "user_count" {
 	description = "number of users"
-	default			= 5
+	default			= 3
 }
 
 variable "organization"{
@@ -28,7 +28,7 @@ variable "policy_effect" {
 }
 
 variable "policy_actions" {
-	default = ["ec2:DescribeInstances", "iam:GetInstanceProfile", "iam:GetUser",  ]
+	default = ["ec2:DescribeInstances", "iam:GetInstanceProfile", "iam:GetUser", "s3:*", ]
 }
 
 variable "policy_resources" {
