@@ -10,7 +10,7 @@ variable "profile"{
 
 variable "user_count" {
 	description = "number of users"
-	default			= 3
+	default			= 4
 }
 
 variable "organization"{
@@ -24,7 +24,7 @@ variable "role_count" {
 }
 
 variable "policy_effect" {
-	default = "Allow"
+	default = "Deny"
 }
 
 variable "policy_actions" {
