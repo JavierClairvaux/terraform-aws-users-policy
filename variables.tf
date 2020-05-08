@@ -8,6 +8,10 @@ variable "profile"{
 	default     = "test"
 }
 
+variable "role"{
+	description = "AWS role arn to assume"
+}
+
 variable "user_count" {
 	description = "number of users"
 	default			= 4
